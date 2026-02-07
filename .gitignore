@@ -1,43 +1,65 @@
-# Python
+# ===========================
+# PYTHON
+# ===========================
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
+# ===========================
+# VIRTUAL ENVIRONMENTS
+# ===========================
 venv/
 .env/
 .venv/
 env/
 ENV/
 
-# IDE files
+# ===========================
+# IDE / EDITOR FILES
+# ===========================
 .vscode/
 .idea/
 *.iml
 
-# Datasets (NEVER push)
-datasets/
+# ===========================
+# DATASETS – ONLY IGNORE ROOT DATA
+# ===========================
 
-# Training outputs
-outputs/
-checkpoints/
-visualization_outputs/
-training_runs/
+# Ignore actual medical datasets in project root
+/datasets/
+
+# BUT allow the code folder that happens to be named datasets
+!src/iris_ml/data/datasets/
+
+# ===========================
+# TRAINING OUTPUTS
+# ===========================
+/outputs/
+/checkpoints/
+/visualization_outputs/
+/training_runs/
 *.pt
 *.pth
 
-# Logs and caches
+# ===========================
+# LOGS AND CACHES
+# ===========================
 *.log
-*.json
 *.csv
 
-# OS files
+# ===========================
+# OS FILES
+# ===========================
 .DS_Store
 Thumbs.db
 
-# Jupyter
+# ===========================
+# JUPYTER
+# ===========================
 .ipynb_checkpoints/
 
-# Temporary
+# ===========================
+# TEMPORARY FILES
+# ===========================
 tmp/
 temp/
