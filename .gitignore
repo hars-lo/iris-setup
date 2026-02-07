@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Datasets (NEVER push)
+datasets/
+
+# Training outputs
+outputs/
+checkpoints/
+visualization_outputs/
+training_runs/
+*.pt
+*.pth
+
+# Logs and caches
+*.log
+*.json
+*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary
+tmp/
+temp/
